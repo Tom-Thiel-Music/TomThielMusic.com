@@ -1,4 +1,38 @@
+$footerHeight: 40px;
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+
 body{
-    background-color: black;
+    background-color: #242323;
     color: white;
+    margin-bottom: $footerHeight;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: $footerHeight;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+header{
+    padding: 15px;
+}
+
+
+#musicPlayer{
+    width: 439px;
+    height: 460px;
+    border:none;
+    margin: 0 auto;
+    display: block;
 }

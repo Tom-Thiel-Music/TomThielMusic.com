@@ -1,1 +1,1 @@
-body{background-color:black;color:white}
+html{position:relative;min-height:100%}body{background-color:#242323;color:white;margin-bottom:40px}footer{position:absolute;bottom:0;left:0;right:0;background-color:black;height:40px;padding-top:5px;padding-bottom:5px}header{padding:15px}#musicPlayer{width:439px;height:460px;border:none;margin:0 auto;display:block}

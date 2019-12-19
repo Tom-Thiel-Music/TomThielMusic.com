@@ -1,15 +1,48 @@
-$footerHeight: 40px;
+$footerHeight: 138px;
 
 html{
     position: relative;
     min-height: 100%;
+    font-family:helvetica-w01-roman, helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
 }
 
 
 body{
-    background-color: #242323;
+    
     color: white;
     margin-bottom: $footerHeight;
+
+    main{
+        background-color: #242323;
+    }
+}
+
+a{
+    color: white;
+}
+
+.videobg{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    
+    video{
+
+        width: 100vw;
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+header{
+    padding: 15px;
+
+
+
+
 }
 
 footer{
@@ -19,14 +52,29 @@ footer{
     right: 0;
     background-color: black;
     height: $footerHeight;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
+
+    .footer{
+        color: #a5a5a5;
+        background-color: #414141;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .nav-container{
+        background-color:#181818;
+        font-weight: 700;
+
+        a{
+            transition: color 250ms ease-in-out;
+        }
+
+        a:hover{
+            color: #F0B000;
+        }
+    }
+
 }
 
-header{
-    padding: 15px;
-}
 
 
 #musicPlayer{
@@ -35,4 +83,22 @@ header{
     border:none;
     margin: 0 auto;
     display: block;
+}
+
+#TomSolo{
+    position: relative;
+
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size: 65px;
+        width: 160px;
+    }
+}
+
+#instagramFrame{
+    margin: 0 auto;
 }
